@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container head">
+        <p class="task">Планируемая задача</p>
+        <form name="formTask">
+          <div class="boxNone">
+            <p class="textnone none">Заполните все поля</p>
+          </div>
+          <input name="textTask" type="text" placeholder="Опишите задачу" />
+          <input name="dateTask" type="date" placeholder="Дата" />
+          <select name="selectTask" id="">
+            <option hidden>Выберите сложность задачи</option>
+            <option value="Сложная">Сложная</option>
+            <option value="Средняя сложность">Средняя сложность</option>
+            <option value="Лёгкая">Лёгкая</option>
+          </select>
+        </form>
+        <button>Создать</button>
+      </div>
+    </header>
+    <main>
+      <div class="container main">
+        <p class="list">Список задач:</p>
+      </div>
+    </main>
+
+    <div class="modal none">
+      <p class="modal_text">Задача добавлена в список</p>
+      <button class="modal_button">OK</button>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

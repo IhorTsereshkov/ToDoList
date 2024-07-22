@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.task {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-size: 27px;
+  padding-top: 20px;
+  margin-bottom: 17px;
+}
+
+form {
+  max-width: 200px;
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 11px;
+}
+
+.boxNone {
+  min-height: 20px;
+  text-align: center;
+}
+
+.none {
+  display: none !important;
+}
+
+.textnone {
+  text-align: center;
+  font-size: 14px;
+  color: red;
+}
+
+input {
+  border: none;
+  border-radius: 10px;
+  min-height: 25px;
+  max-width: 250px;
+  padding-left: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  background-color: white !important;
+}
+
+input:focus::placeholder {
+  color: white;
+}
+
+select {
+  border: none;
+  border-radius: 10px;
+  min-height: 25px;
+  max-width: 250px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+button {
+  margin-bottom: 20px;
+  background-color: rgb(202, 194, 161);
+  width: 120px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.main {
+  max-width: 550px;
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 5px 25px;
+}
+
+.list {
+  font-size: 19px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.newBox {
+  width: 70%;
+  border: 3px solid rgb(112, 99, 47);
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.modal {
+  margin: 0 auto;
+  width: 150px;
+  height: 110px;
+  padding: 10px;
+  background-color: rgb(210, 212, 150);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal_text {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.modal_button {
+  margin-bottom: 0px;
+  width: 70px;
+}
