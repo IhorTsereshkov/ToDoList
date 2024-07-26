@@ -98,15 +98,23 @@ button {
 }
 
 .list {
+  max-width: 350px;
+  width: 100%;
   font-size: 19px;
   font-family: "Times New Roman", Times, serif;
 }
 
 .newBox {
-  width: 70%;
+  max-width: 350px;
+  width: 100%;
   border: 3px solid rgb(112, 99, 47);
   border-radius: 10px;
   margin-bottom: 5px;
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
 }
 
 .modal {
@@ -136,4 +144,28 @@ button {
 .modal_button {
   margin-bottom: 0px;
   width: 70px;
+}
+
+.newDiv {
+  max-width: 350px;
+  width: 100%;
+}
+
+.delete {
+  text-align: center;
+  margin: 0;
+  background-color: white;
+  color: red;
+  border: 1px red solid;
+}
+
+.delete:hover {
+  background-color: red;
+  color: white;
+  border: 1px white solid;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
 }
